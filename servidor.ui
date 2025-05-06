@@ -6,13 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Servidor</string>
   </property>
+  <widget class="QLabel" name="lbl_servidor_info">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>311</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>IP: 127.0.0.1, puerto: 1234</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_random_msg">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>311</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mensaje aleatorio n</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_cerrar">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>210</y>
+     <width>88</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

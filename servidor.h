@@ -2,6 +2,12 @@
 #define SERVIDOR_H
 
 #include <QWidget>
+#include <QTcpServer>
+#include <QTcpSocket>
+// para obtener las IP
+#include <QNetworkInterface>
+// para funcionalidad de aleatoriedad
+#include <QRandomGenerator>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -19,5 +25,12 @@ public:
 
 private:
     Ui::Servidor *ui;
+    QTcpServer *serverSocket = nullptr;
+    QVector<QString> randomMessages;
+
+    void initServer();
+
+private slots:
+    void sendRandomMessage();
 };
 #endif // SERVIDOR_H
